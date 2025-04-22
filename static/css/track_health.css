@@ -1,0 +1,165 @@
+/* Base Styles */
+body.track-health {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #121212, #2d2d2d);
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 1500px; /* Creates depth for 3D effects */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #009ffd, #2a2a72);
+    transform: perspective(1000px) rotateX(5deg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tracking Section */
+#tracking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 20px;
+    z-index: 1;
+}
+
+/* Tracker Cards */
+.tracker-card {
+    background: linear-gradient(135deg, #ffb3ba, #ffccd5);
+    color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: rotateY(10deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    animation: fadeInUp 0.7s ease-in-out;
+}
+
+.tracker-card:hover {
+    transform: rotateY(0deg) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #ffb3ba, #ff8080);
+}
+
+.tracker-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tracker-card p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+input[type="text"], button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"] {
+    background: #fff;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff8080;
+    box-shadow: 0 8px 20px rgba(255, 128, 128, 0.5);
+    transform: translateY(-5px);
+}
+
+button {
+    background: linear-gradient(135deg, #ff6a00, #d3004f);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2d98da;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .tracker-card {
+        padding: 25px;
+        width: 90%;
+        max-width: none;
+    }
+
+    header {
+        padding: 60px 20px;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+    }
+}

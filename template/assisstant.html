@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../static/css/style.css">
+<link rel="stylesheet" href="../static/css/track_health.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Assistant | 3D Health Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Talk to Your Personal Assistant</h1>
+            <p>Get instant health advice based on your specific needs and goals.</p>
+        </div>
+    </header>
+
+    <section id="assistant-chat">
+        <div class="container">
+            <h2>Start Chatting Now!</h2>
+            <p>Ask me anything about health, fitness, and wellness.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Assistant. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot (Floating) -->
+    <div id="chat-container"></div>
+
+    <!-- Botpress Chatbot Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/21/08/20241221082530-AEYMJJ86.js"></script>
+</body>
+</html>

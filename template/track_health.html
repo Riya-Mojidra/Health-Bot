@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../static/css/style.css">
+<link rel="stylesheet" href="../static/css/track_health.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Health | 3D Health Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/track_health.css') }}">
+</head>
+<body class="track-health">
+    <header>
+        <div class="container">
+            <h1>Track Your Health</h1>
+            <p>Log your meals, exercises, and well-being to monitor your health journey.</p>
+        </div>
+    </header>
+
+    <section id="tracking">
+        <div class="container">
+            <!-- Tracker Card: Track Meals -->
+            <div class="tracker-card">
+                <h2>Track Your Meals</h2>
+                <p>Log your meals and calculate your daily nutritional intake.</p>
+                <input type="text" placeholder="Enter meal details">
+                <button>Log Meal</button>
+            </div>
+
+            <!-- Tracker Card: Track Exercises -->
+            <div class="tracker-card">
+                <h2>Track Your Exercises</h2>
+                <p>Record your workouts and monitor your fitness goals.</p>
+                <input type="text" placeholder="Enter exercise details">
+                <button>Log Exercise</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/21/08/20241221082530-AEYMJJ86.js"></script>
+</body>
+</html>
